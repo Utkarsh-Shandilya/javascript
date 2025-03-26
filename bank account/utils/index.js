@@ -3,4 +3,6 @@ import createDownloadableLink from './createDownloadableLink';
 import formatCurrency from './formatCurrency';
 import recordTransaction from './recordTransaction';
 
-export { generateUniqueId, createDownloadableLink, formatCurrency, recordTransaction };
+const isNumeric = (value) => !isNaN(parseFloat(value)) && isFinite(value);
+
+export { generateUniqueId, createDownloadableLink, formatCurrency, recordTransaction, isNumeric };
