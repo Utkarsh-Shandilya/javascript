@@ -1,0 +1,1 @@
+const shallowClone = (obj) => Array.isArray(obj) ? [...obj] : { ...obj };
